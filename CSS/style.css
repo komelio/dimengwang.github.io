@@ -153,12 +153,12 @@ footer, section:after {
 }
 
 footer
-{
+{ 
     width: 100%;
-    height: 45px;
+    height: 25px;
     position: fixed;
     bottom: 0;
-    text-indent: 25px ;
+    text-align:center;
     z-index: -1 ;
 }
 figcaption
@@ -176,4 +176,26 @@ label
 	display: block;
 	margin-top: 20px;
 	letter-spacing: 2px;
+}
+
+#title
+{
+  text-align: center;
+  font-size: 3em;
+}
+
+#reports
+{
+  text-align: justify;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin bottom:5rem;
+  font-size:2em;
+}
+
+#rating
+{
+  font-weight: bold;
+  margin-left: 5rem;
+  font-size:2em;
 }
