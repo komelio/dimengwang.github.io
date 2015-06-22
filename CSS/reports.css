@@ -72,6 +72,7 @@ input[type="text"] {
 
 .isotope {
   border: 1px solid #333;
+  margin-top: 1.2rem;
 }
 
 /* clear fix */
@@ -130,6 +131,7 @@ input[type="text"] {
   left: 10px;
   top: 76px;
   font-size: 12px;
+  font-weight: bold;
 }
 
 .element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
