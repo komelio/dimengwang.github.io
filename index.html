@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang = "en">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
 
 <body>
 
 <head>
 	<link rel = "stylesheet" type= "text/css"  href = "CSS/style.css">
 	<link rel = "stylesheet" type= "text/css"  href = "CSS/reports.css">
+	<link rel = "stylesheet" type= "text/css"  href = "CSS/slider.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<meta charset = "UTF-8">
-	<title>Foolish Analyst</title>
+	<title>Hello</title>
 </head>
-
-<header><img id="banner" src="images/Header.jpg" alt="Banner"></header>
 
 <nav id='nav_bar'>
 	<ul class='nav_links'>
@@ -21,10 +23,23 @@
 	</ul>
 </nav>
 
+<div id="cbp-fwslider" class="cbp-fwslider">
+	<ul>
+		<li><a href="#"><img src="images/1.jpg" alt="img01"/></a></li>
+		<li><a href="#"><img src="images/2.jpg" alt="img02"/></a></li>
+		<li><a href="#"><img src="images/3.jpg" alt="img03"/></a></li>
+		<li><a href="#"><img src="images/4.jpg" alt="img04"/></a></li>
+	</ul>
+</div>
+
+
+
+
+
 <section>
 <br>
 	<br>
-	<p><input type="text" id="quicksearch" placeholder="Search" /></p>
+	<p id="search"><input type="text" id="quicksearch" placeholder="Search" /></p>
 
 	<div id="filters" class="button-group">
 	  <button class="button is-checked" data-filter="*">Show All</button>
@@ -56,15 +71,37 @@
 	    <h2 class="name"><a href="Microsoft.html">Microsoft</a></h2>
 	    <p class="symbol"><a href="Microsoft.html">Msft</a></p>
 	    <p class="weight">Undervalue/Buy</p>
-	  </div>
-	  
-<footer>
-	<small>Copyright © 2014-2015 Dimeng Wang </small>
-</footer>
+	  </div>	
+	  <br>
+	  <br>
+</section>
 
 </body>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/isotope.pkgd.js"></script>
 <script src="js/isotopes.js"></script>
-<script src="js/header.js"></script>
+
+<script src="js/slider.js"></script>
+<script>
+	$( function() {
+		/*
+		- how to call the plugin:
+		$( selector ).cbpFWSlider( [options] );
+		- options:
+		{
+			// default transition speed (ms)
+			speed : 500,
+			// default transition easing
+			easing : 'ease'
+		}
+		- destroy:
+		$( selector ).cbpFWSlider( 'destroy' );
+		*/
+
+		$( '#cbp-fwslider' ).cbpFWSlider();
+		$( '#cbp-fwslider' ).cbpFWSlider('interval');
+	} );
+</script>
+
 </html>

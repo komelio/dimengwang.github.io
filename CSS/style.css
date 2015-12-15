@@ -1,8 +1,9 @@
-header
+body
 {
-	background-color:black;
-	text-align: center;
+  padding-bottom: 10em;
+  font-family: font-family: 'Open Sans', sans-serif;
 }
+
 #banner
 {
 	display: block;
@@ -12,19 +13,25 @@ header
 
 #nav_bar 
 {
-  background: black;
-  border: 1px solid #ccc;
-  border-right: none;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.navbar-fixed 
-{
+  position: absolute;
   top: 0;
-  z-index: 100;
-  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  margin: 0;
+  margin-left: -0em;
   width: 100%;
+  min-width: 1024px;
+  height: 3.5em;
+  max-height: 3.5em;
+  background: #323232;
+  background: rgba(0,0,0,0.8);
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .nav_links 
@@ -38,8 +45,6 @@ header
 {
   list-style: none;
   text-align: center;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #ccc;
   flex-grow: 1;
 }
 
@@ -50,6 +55,7 @@ nav ul li:first-child
 .nav_links li a 
 {
   display: block;
+  margin-top: .6em;
   text-decoration: none;
   color: white;
   padding: 10px 0;
@@ -63,6 +69,7 @@ nav ul li:first-child
 
   nav {
     font-size: .8em;
+    font: Open Sans;
   }
   
   nav ul li 
@@ -141,8 +148,9 @@ details
 section {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: 3 rem; 
   margin-top: 30px;
+  margin-left:5%;
+  margin-right: 5%;
 }
 section:after {
   content: "";
@@ -182,6 +190,12 @@ label
 {
   text-align: center;
   font-size: 3em;
+  margin-top: 2em;
+}
+
+#alt-pages
+{
+margin-top: 6em;
 }
 
 #reports
@@ -206,3 +220,6 @@ label
   margin-left: 5rem;
   font-size:2.5em;
 }
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<script src="js/modernizr.custom.js"></script>
+
+<head>
+  <link rel = "stylesheet" type= "text/css"  href = "CSS/slider.css">
+  <meta charset="UTF-8">
+  <title> Hello </title>
+</head>
+
+<div id="cbp-fwslider" class="cbp-fwslider">
+	<ul>
+		<li><a href="#"><img src="images/1.jpg" alt="img01"/></a></li>
+		<li><a href="#"><img src="images/2.jpg" alt="img02"/></a></li>
+		<li><a href="#"><img src="images/3.jpg" alt="img03"/></a></li>
+		<li><a href="#"><img src="images/4.jpg" alt="img04"/></a></li>
+	</ul>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/slider.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpFWSlider( [options] );
+				- options:
+				{
+					// default transition speed (ms)
+					speed : 500,
+					// default transition easing
+					easing : 'ease'
+				}
+				- destroy:
+				$( selector ).cbpFWSlider( 'destroy' );
+				*/
+
+				$( '#cbp-fwslider' ).cbpFWSlider();
+
+			} );
+		</script>
+<body>
+<h1></h1>
+<p>
+  
+</p>
+</body>
+</html>
