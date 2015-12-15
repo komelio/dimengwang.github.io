@@ -31,7 +31,7 @@
 			var that = this;
 			setInterval(function(){
 				return that.autoplay();
-				},5000);
+				},10000);
 			},
 
 		_init : function( options ) {
